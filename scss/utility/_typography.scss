@@ -1,0 +1,42 @@
+@use "functions" as f;
+
+$font-family: "Work Sans";
+$font-weight-bold: 700;
+$line-height-sm: 21;
+$line-height-md: 24;
+$line-height-lg: 66;
+$letter-spacing-0: 0;
+
+@mixin text-preset-1 {
+    font-family: $font-family, sans-serif;
+    font-size: 2rem;
+    font-size: clamp(2rem, -0.5rem + 10.666666666666666vw, 3.5rem);
+    font-weight: $font-weight-bold;
+    line-height: f.rem($line-height-lg);
+    letter-spacing: $letter-spacing-0;
+}
+
+@mixin text-preset-2 {
+    font-family: $font-family, sans-serif;
+    font-size: 1rem;
+    font-size: clamp(
+        1rem,
+        0.7916666666666666rem + 0.8888888888888888vw,
+        1.125rem
+    );
+    font-weight: $font-weight-bold;
+    line-height: f.rem($line-height-sm);
+    letter-spacing: $letter-spacing-0;
+}
+
+@mixin text-preset-3 {
+    font-family: $font-family, sans-serif;
+    font-size: 0.875rem;
+    font-size: clamp(
+        0.875rem,
+        0.6666666666666666rem + 0.8888888888888888vw,
+        1rem
+    );
+    line-height: f.rem($line-height-md);
+    letter-spacing: $letter-spacing-0;
+}
