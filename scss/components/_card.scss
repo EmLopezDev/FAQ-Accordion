@@ -36,7 +36,6 @@
     &__question {
         padding: u.rem(24) 0;
         border-bottom: 1px solid var(--color-purple-100);
-        interpolate-size: allow-keywords;
 
         &::details-content {
             overflow: hidden;
@@ -71,7 +70,7 @@
         }
 
         &[open]::details-content {
-            block-size: auto;
+            block-size: 120px;
         }
 
         &[open] summary::after {
