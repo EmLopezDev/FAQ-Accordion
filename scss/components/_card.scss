@@ -54,6 +54,11 @@
                 color: var(--color-violet-600);
             }
 
+            &:focus {
+                outline: none;
+                color: var(--color-violet-600);
+            }
+
             &::after {
                 content: url(../images/icon-plus.svg);
             }
