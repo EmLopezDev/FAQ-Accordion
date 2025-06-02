@@ -94,3 +94,10 @@
         }
     }
 }
+
+@media (prefers-reduced-motion: reduce) {
+    .card__question::details-content {
+        transition: none;
+        animation: none;
+    }
+}
