@@ -40,11 +40,9 @@
         & summary {
             display: flex;
             align-items: center;
+            justify-content: space-between;
             list-style: none;
             cursor: pointer;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
             gap: u.rem(24);
             color: var(--color-purple-950);
 
