@@ -58,6 +58,7 @@ Users should be able to:
 ### Useful resources
 
 -   [Details Tag](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/details) - This helped with learning how to change the CSS of the details tag when it is open
+-   [Details Animation](https://www.youtube.com/watch?v=Vzj3jSUbMtI) - Fun tutorial on how to add css animation to details tag
 
 ## Author
 

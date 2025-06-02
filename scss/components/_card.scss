@@ -36,6 +36,14 @@
     &__question {
         padding: u.rem(24) 0;
         border-bottom: 1px solid var(--color-purple-100);
+        interpolate-size: allow-keywords;
+
+        &::details-content {
+            overflow: hidden;
+            block-size: 0;
+            transition: block-size 1s, content-visibility 1s;
+            transition-behavior: allow-discrete;
+        }
 
         & summary {
             display: flex;
@@ -60,6 +68,10 @@
             &::after {
                 content: url(../images/icon-plus.svg);
             }
+        }
+
+        &[open]::details-content {
+            block-size: auto;
         }
 
         &[open] summary::after {
