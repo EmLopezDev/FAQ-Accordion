@@ -46,11 +46,9 @@
             justify-content: space-between;
             align-items: center;
             gap: u.rem(24);
+            color: var(--color-purple-950);
 
-            & span {
-                color: var(--color-purple-950);
-                @include u.text-preset-2;
-            }
+            @include u.text-preset-2;
 
             &:hover {
                 color: var(--color-violet-600);
