@@ -1,7 +1,35 @@
+@use "../utility/" as u;
+
 *,
 ::before,
 ::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    min-height: 100dvh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: var(--color-purple-100);
+
+    &::before {
+        content: "";
+        background: url(/images/background-pattern-mobile.svg) no-repeat top
+            center fixed;
+        background-size: contain;
+        position: absolute;
+        width: 100%;
+        height: u.rem(300);
+        top: 0;
+
+        @include u.breakpoint(small) {
+            background: url(../images/background-pattern-desktop.svg) no-repeat;
+            background-size: cover;
+        }
+    }
 }
