@@ -32,17 +32,20 @@
         <title>FAQ accordion</title>
     </head>
     <body>
-        <main>
-            <h1>
+        <main class="card">
+            <h1 class="card__header">
                 <img
+                    class="card__header--image"
                     src="./images/icon-star.svg"
-                    alt=""
+                    alt="star icon"
                 />
                 FAQs
             </h1>
-            <details>
+            <details class="card__question">
                 <summary>
-                    What is Frontend Mentor, and how will it help me?
+                    <span>
+                        What is Frontend Mentor, and how will it help me?
+                    </span>
                 </summary>
                 <p>
                     Frontend Mentor offers realistic coding challenges to help
@@ -51,17 +54,19 @@
                     levels and ideal for portfolio building.
                 </p>
             </details>
-            <details>
-                <summary>Is Frontend Mentor free?</summary>
+            <details class="card__question">
+                <summary><span>Is Frontend Mentor free?</span></summary>
                 <p>
                     Yes, Frontend Mentor offers both free and premium coding
                     challenges, with the free option providing access to a range
                     of projects suitable for all skill levels.
                 </p>
             </details>
-            <details>
+            <details class="card__question">
                 <summary>
-                    Can I use Frontend Mentor projects in my portfolio?
+                    <span>
+                        Can I use Frontend Mentor projects in my portfolio?
+                    </span>
                 </summary>
                 <p>
                     Yes, you can use projects completed on Frontend Mentor in
@@ -69,10 +74,12 @@
                     skills to potential employers!
                 </p>
             </details>
-            <details>
+            <details class="card__question">
                 <summary>
-                    How can I get help if I'm stuck on a Frontend Mentor
-                    challenge?
+                    <span>
+                        How can I get help if I'm stuck on a Frontend Mentor
+                        challenge?
+                    </span>
                 </summary>
                 <p>
                     The best place to get help is inside Frontend Mentor's

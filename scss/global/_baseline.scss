@@ -16,10 +16,15 @@ body {
     align-items: center;
     position: relative;
     background-color: var(--color-purple-100);
+    padding: u.rem(24);
+
+    @include u.breakpoint(small) {
+        padding: u.rem(32);
+    }
 
     &::before {
         content: "";
-        background: url(/images/background-pattern-mobile.svg) no-repeat top
+        background: url(../images/background-pattern-mobile.svg) no-repeat top
             center fixed;
         background-size: contain;
         position: absolute;
