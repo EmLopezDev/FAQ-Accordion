@@ -55,12 +55,12 @@
             }
 
             &::after {
-                content: url(/images/icon-plus.svg);
+                content: url(../images/icon-plus.svg);
             }
         }
 
         &[open] summary::after {
-            content: url(/images/icon-minus.svg);
+            content: url(../images/icon-minus.svg);
         }
 
         & p {
