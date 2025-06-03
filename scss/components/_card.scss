@@ -70,7 +70,11 @@
         }
 
         &[open]::details-content {
-            block-size: 120px;
+            block-size: 165px;
+
+            @include u.breakpoint(small) {
+                block-size: 120px;
+            }
         }
 
         &[open] summary::after {
